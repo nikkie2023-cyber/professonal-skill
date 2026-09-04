@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>爆款拆解助手</title>
+  <style>
+    body{width:320px;margin:0;padding:18px;font:14px/1.5 system-ui,"Microsoft YaHei",sans-serif;color:#1f2937;background:#f8fafc}
+    h1{font-size:18px;margin:0 0 6px}p{color:#64748b;margin:0 0 14px}
+    label{display:block;font-weight:600;margin:12px 0 5px}input,select,textarea{box-sizing:border-box;width:100%;padding:9px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;font:inherit}
+    textarea{min-height:54px;resize:vertical}.button{width:100%;margin-top:16px;padding:11px;border:0;border-radius:9px;background:#5b3df5;color:white;font-weight:700;cursor:pointer}.button:disabled{opacity:.55;cursor:wait}
+    #status{margin-top:12px;white-space:pre-wrap;color:#475569}.ok{color:#15803d!important}.error{color:#b91c1c!important}
+  </style>
+</head>
+<body>
+  <h1>爆款拆解助手</h1>
+  <p>在抖音或小红书视频页面点击发送，保存后回到工作台分析。</p>
+  <label for="endpoint">工作台地址</label>
+  <input id="endpoint" value="http://127.0.0.1:8000">
+  <label for="platform">平台</label>
+  <select id="platform"><option value="douyin">抖音</option><option value="xiaohongshu">小红书</option><option value="other">其他</option></select>
+  <label for="note">备注（可选）</label>
+  <textarea id="note" placeholder="例如：想学习开头和卖点展示"></textarea>
+  <button id="send" class="button">发送到拆解系统</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
