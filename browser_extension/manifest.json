@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "爆款拆解助手",
+  "version": "0.1.1",
+  "description": "Send a public video page from Douyin or Xiaohongshu to the AI video analysis workbench.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*",
+    "https://*.douyin.com/*",
+    "https://*.xiaohongshu.com/*",
+    "https://*/*"
+  ],
+  "action": { "default_popup": "popup.html" }
+}
