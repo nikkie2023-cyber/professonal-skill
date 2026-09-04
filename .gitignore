@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+data/
+
+# Local media tooling is large and platform-specific; install FFmpeg separately.
+ffmpeg-*/
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
