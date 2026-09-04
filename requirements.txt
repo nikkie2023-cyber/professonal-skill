@@ -1,0 +1,7 @@
+# Optional production dependencies for the next implementation step.
+# Step 1 intentionally uses Python's standard library so the scaffold can run offline.
+fastapi
+uvicorn
+python-dotenv
+pytest
+httpx
